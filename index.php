@@ -69,7 +69,34 @@
 
 <div class="section group">
 	<div class="col span_1_of_3">
-	This is column 1
+	<?php
+$servername = "localhost";
+$username = "sec_user";
+$password = "greenChair153";
+$dbname = "drainagecritic";
+
+// Create connection
+$conn = mysqli_connect($servername, $username, $password, $dbname);
+// Check connection
+if (!$conn) {
+  die("Connection failed: " . mysqli_connect_error());
+}
+
+$sql = "SELECT id, title1, para1, img1 FROM pages";
+$result = mysqli_query($conn, $sql);
+
+if (mysqli_num_rows($result) > 0) {
+  // output data of each row
+  while($row = mysqli_fetch_assoc($result)) {
+    echo "<img src= 'images/".$row["img1"]."'>";
+    echo "id: " . $row["id"]. " - title: " . $row["title1"]. " " . $row["para1"]. "<br>";
+  }
+} else {
+  echo "0 results";
+}
+
+mysqli_close($conn);
+?>
 	</div>
 	<div class="col span_1_of_3">
 	This is column 2
