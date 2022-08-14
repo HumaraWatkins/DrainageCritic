@@ -7,26 +7,7 @@
 <meta charset="utf-8">
 <title>Login</title>
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-</head>
-<body>
-<div class="login">
-<h1>Login</h1>
-<form action="authenticate.php" method="post">
-<label for="username">
-<i class="fas fa-user"></i>
-</label>
-<input type="text" name="username" placeholder="Username" id="username" required>
-<label for="password">
-<i class="fas fa-lock"></i>
-</label>
-<input type="password" name="password" placeholder="Password" id="password" required>
-<input type="submit" value="Login">
-</form>
-</div>
-
     
-    
-<title>Page Title</title>
  <style>
     
     /*  SECTIONS  */
@@ -76,7 +57,24 @@
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
      </style>
+    
+</head>
 <body>
+<div class="login">
+<h1>Login</h1>
+<form action="authenticate.php" method="post">
+<label for="username">
+<i class="fas fa-user"></i>
+</label>
+<input type="text" name="username" placeholder="Username" id="username" required>
+<label for="password">
+<i class="fas fa-lock"></i>
+</label>
+<input type="password" name="password" placeholder="Password" id="password" required>
+<input type="submit" value="Login">
+</form>
+</div>
+
 
     <div class="section group">
 	<div class="col span_1_of_3">
@@ -94,7 +92,8 @@
 
 <div class="section group">
 	<div class="col span_1_of_3">
-	<?php
+        
+<?php
 $servername = "localhost";
 $username = "sec_user";
 $password = "greenChair153";
@@ -120,6 +119,7 @@ if (mysqli_num_rows($result) > 0) {
   echo "0 results";
 }
 
+
 mysqli_close($conn);
 ?>
 	</div>
@@ -132,4 +132,6 @@ mysqli_close($conn);
 </div>
     
 </body>
+</body>
 </html>
+
