@@ -72,6 +72,7 @@
 </label>
 <input type="password" name="password" placeholder="Password" id="password" required>
 <input type="submit" value="Login">
+<p class="logthing">New user? <a href="register_form.php">register</a></p>
 </form>
 </div>
 
