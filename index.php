@@ -5,28 +5,10 @@
     <link href="style.css" rel="stylesheet" type="text/css">
     
 <meta charset="utf-8">
-<title>Login</title>
-<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
-</head>
-<body>
-<div class="login">
-<h1>Login</h1>
-<form action="authenticate.php" method="post">
-<label for="username">
-<i class="fas fa-user"></i>
-</label>
-<input type="text" name="username" placeholder="Username" id="username" required>
-<label for="password">
-<i class="fas fa-lock"></i>
-</label>
-<input type="password" name="password" placeholder="Password" id="password" required>
-<input type="submit" value="Login">
-</form>
-</div>
 
     
     
-<title>Page Title</title>
+<title>HomePage</title>
  <style>
     
     /*  SECTIONS  */
@@ -76,6 +58,7 @@
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
 }
      </style>
+    </head>
 <body>
 
     <div class="section group">
@@ -95,20 +78,9 @@
 <div class="section group">
 	<div class="col span_1_of_3">
 	<?php
-$servername = "localhost";
-$username = "sec_user";
-$password = "greenChair153";
-$dbname = "drainagecritic";
-
-// Create connection
-$conn = mysqli_connect($servername, $username, $password, $dbname);
-// Check connection
-if (!$conn) {
-  die("Connection failed: " . mysqli_connect_error());
-}
-
+include('setup.php');
 $sql = "SELECT id, title1, para1, img1 FROM pages";
-$result = mysqli_query($conn, $sql);
+$result = mysqli_query($con, $sql);
 
 if (mysqli_num_rows($result) > 0) {
   // output data of each row
@@ -120,7 +92,7 @@ if (mysqli_num_rows($result) > 0) {
   echo "0 results";
 }
 
-mysqli_close($conn);
+mysqli_close($con);
 ?>
 	</div>
 	<div class="col span_1_of_3">
