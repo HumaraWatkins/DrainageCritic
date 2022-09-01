@@ -1,77 +1,66 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta charset="utf-8">
+ <title>Drainage Critic - Homepage</title>
     <link href="style.css" rel="stylesheet" type="text/css">
     
-<meta charset="utf-8">
-
+ <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">     
     
-    
-<title>HomePage</title>
- <style>
-    
-    /*  SECTIONS  */
-.section {
-	clear: both;
-	padding: 0px;
-	margin: 0px;
+    <style>
+
+    /* Add a black background color to the top navigation */
+.topnav {
+  background-color: #333;
+  overflow: hidden;
 }
 
-/*  COLUMN SETUP  */
-.col {
-	display: block;
-	float:left;
-	margin: 1% 0 1% 1.6%;
-}
-.col:first-child { margin-left: 0; }
-
-
-/*  GROUPING  */
-.group:before,
-.group:after {
-	content:"";
-	display:table;
-}
-.group:after {
-	clear:both;
-}
-.group {
-    zoom:1; /* For IE 6/7 */
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
-/*  GRID OF THREE  */
-.span_3_of_3 {
-	width: 100%;
-}
-.span_2_of_3 {
-	width: 66.1%;
-}
-.span_1_of_3 {
-	width: 32.2%;
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
 }
 
-/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
-
-@media only screen and (max-width: 600px) {
-	.col { margin: 1% 0 1% 0%;}
-	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #04AA6D;
+  color: white;
 }
-     </style>
+    </style>
+ 
     </head>
 <body>
 
     <div class="section group">
 	<div class="col span_1_of_3">
-	Logo
+<img src = "images/logo.jpg">
 	</div>
 	<div class="col span_2_of_3">
-	menu
+        
+  <div class="topnav">
+  <a class="active" href="index.php">Home</a>
+  <a href="services.php">Our Services</a>
+  <a href="aboutus.php">About Us</a>
+  <a href="contactus.php">Contact Us</a>
+</div>      
+	
+
 	</div>
 </div>
 <div class="section group">
 	<div class="col span_3_of_3">
-	This is carrosel
+<img src ="images/house.jpg">
 	</div>
 </div>
 
