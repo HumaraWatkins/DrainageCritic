@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Aug 28, 2022 at 11:43 PM
+-- Generation Time: Sep 21, 2022 at 03:57 AM
 -- Server version: 10.4.21-MariaDB
 -- PHP Version: 7.4.29
 
@@ -61,7 +61,11 @@ CREATE TABLE `pages` (
 --
 
 INSERT INTO `pages` (`id`, `title1`, `para1`, `img1`) VALUES
-(1, 'First Meeting', 'We have a meeting to discuss damage and costs', 'home.png');
+(1, 'First Meeting', 'We have a meeting to discuss damage and costs', 'meeting.png'),
+(2, NULL, NULL, 'sign.png'),
+(3, NULL, NULL, 'payment.png'),
+(4, NULL, NULL, 'worksstart.png'),
+(5, NULL, NULL, 'signoff.png');
 
 --
 -- Indexes for dumped tables
@@ -93,7 +97,7 @@ ALTER TABLE `accounts`
 -- AUTO_INCREMENT for table `pages`
 --
 ALTER TABLE `pages`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=6;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

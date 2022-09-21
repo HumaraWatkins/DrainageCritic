@@ -65,7 +65,7 @@
 </div>
 
 <div class="section group">
-	<div class="col span_1_of_3">
+	<div class="col span_3_of_3">
 	<?php
 include('setup.php');
 $sql = "SELECT id, title1, para1, img1 FROM pages";
@@ -75,7 +75,7 @@ if (mysqli_num_rows($result) > 0) {
   // output data of each row
   while($row = mysqli_fetch_assoc($result)) {
     echo "<img src= 'images/".$row["img1"]."'>";
-    echo "id: " . $row["id"]. " - title: " . $row["title1"]. " " . $row["para1"]. "<br>";
+   // echo "id: " . $row["id"]. " - title: " . $row["title1"]. " " . $row["para1"]. "<br>";
   }
 } else {
   echo "0 results";
@@ -84,12 +84,7 @@ if (mysqli_num_rows($result) > 0) {
 mysqli_close($con);
 ?>
 	</div>
-	<div class="col span_1_of_3">
-	This is column 2
-	</div>
-	<div class="col span_1_of_3">
-	This is column 3
-	</div>
+
 </div>
     
 </body>
