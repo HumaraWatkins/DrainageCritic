@@ -49,14 +49,53 @@ body {
 	width: 32.2%;
 }
 
+
+
+/*  GRID OF NINE  */
+.span_9_of_9 {
+	width: 100%;
+}
+
+.span_8_of_9 {
+  	width: 88.77%;
+}
+
+.span_7_of_9 {
+  	width: 77.55%;
+}
+
+.span_6_of_9 {
+  	width: 66.33%;
+}
+
+.span_5_of_9 {
+  	width: 55.11%;
+}
+
+.span_4_of_9 {
+  	width: 43.88%;
+}
+
+.span_3_of_9 {
+  	width: 32.66%;
+}
+
+.span_2_of_9 {
+  	width: 21.44%;
+}
+
+.span_1_of_9 {
+  	width: 10.22%;
+}
+
 /*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
 
 @media only screen and (max-width: 600px) {
 	.col { margin: 1% 0 1% 0%;}
 	.span_3_of_3, .span_2_of_3, .span_1_of_3 { width: 100%; }
+    
+    .span_1_of_9, .span_2_of_9, .span_3_of_9, .span_4_of_9, .span_5_of_9, .span_6_of_9, .span_7_of_9, .span_8_of_9, .span_9_of_9 { width: 100%; }
 }
-
-
 
 .login {
   	width: 400px;
