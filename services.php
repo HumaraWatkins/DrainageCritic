@@ -44,7 +44,7 @@
   margin: 5px;
   border: 1px solid #ccc;
   float: left;
-  width: 180px;
+  width: 24%;
 }
 
 div.gallery:hover {
@@ -93,7 +93,8 @@ div.desc {
 </div>
 
 
-<div class="gallery">
+<div class="section group">
+	<div class="col span_1_of_4">
   <a target="_blank" href="img_assement.jpg">
     <img src="images/assement.jpg" alt="Assesment" width="600" height="400">
   </a>
@@ -106,7 +107,7 @@ div.desc {
 </div>
 </div>
 
-<div class="gallery">
+	<div class="col span_1_of_4">
    <a target="_blank" href="img_assement.jpg">
     <img src="images/setlement.jpg" alt="settlement" width="600" height="400">
   </a>
@@ -117,7 +118,8 @@ div.desc {
     </div>
 </div>
     
-    <div class="gallery">
+    
+	<div class="col span_1_of_4">
   <a target="_blank" href="img_physicalworks.jpg">
     <img src="images/Physicalworks.jpg" alt="physicalworks" width="600" height="400">
   </a>
@@ -130,7 +132,8 @@ div.desc {
           </div>
 </div>
 
-<div class="gallery">
+
+	<div class="col span_1_of_4">
   <a target="_blank" href="img_finshed.jpg">
     <img src="images/finshed.jpg" alt="finshed" width="600" height="400">
   </a>
@@ -139,7 +142,7 @@ div.desc {
         <ul>Afterwards the property will be restored to it’s orginal condition </ul>
 </div>
 </div>
-
+    </div>
     
 
 </body>
