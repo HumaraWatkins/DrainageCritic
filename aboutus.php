@@ -2,7 +2,7 @@
 <html>
 <head>
 <meta charset="utf-8">
- <title>Drainage Critic - Homepage</title>
+ <title>Drainage Critic - About Us </title>
     <link href="css/style.css" rel="stylesheet" type="text/css">
     
  <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
@@ -51,7 +51,7 @@ include "header.php";
   ?>  
 <div class="wrapper section group">
 	<div class="col span_3_of_3">
-<img width=100% src ="images/house.jpg">
+
 	</div>
 </div>
 

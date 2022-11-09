@@ -70,22 +70,8 @@ div.desc {
  </body>
 <body>
 
-    <div class="section group">
-	<div class="col span_1_of_3">
-<img src = "images/logo.jpg">
-	</div>
-	<div class="col span_2_of_3">
-        
-  <div class="topnav">
-  <a class="active" href="index.php">Home</a>
-  <a href="services.php">Our Services</a>
-  <a href="aboutus.php">About Us</a>
-  <a href="contactus.php">Contact Us</a>
-</div>      
-	
-
-	</div>
-</div>
+  
+<?php include "header.php"; ?>
 <div class="section group">
 	<div class="col span_3_of_3">
 <img src ="images/house.jpg">
